@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-krs-dark: #0f172a;
+  --color-krs-accent: #FF4655;
+}
+
+@layer base {
+  body {
+    @apply bg-krs-dark text-gray-200 font-sans antialiased;
+  }
+}
+
+.btn-primary {
+  @apply bg-krs-accent text-white px-4 py-2 font-medium hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-krs-accent focus:ring-offset-2 focus:ring-offset-krs-dark transition-colors shadow-sm;
+}
+
+.btn-secondary {
+  @apply bg-slate-800 text-gray-300 px-4 py-2 font-medium hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-krs-dark transition-colors shadow-sm;
+}
+
+.btn-danger {
+  @apply bg-red-800 text-white px-4 py-2 font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-krs-dark transition-colors shadow-sm;
+}
+
+.input-field {
+  @apply bg-slate-800 border border-slate-700 text-gray-200 focus:outline-none focus:border-krs-accent focus:ring-1 focus:ring-krs-accent w-full px-3 py-2 shadow-sm;
+}
+
+.card {
+  @apply bg-slate-800 border border-slate-700 shadow-lg p-6;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black/70 flex items-center justify-center z-50;
+}
