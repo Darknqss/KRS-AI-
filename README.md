@@ -94,7 +94,7 @@ cd KRS-AI-
    ```bash
    npm run dev
    ```
-4. Buka browser dan akses ke `http://localhost:5173/`.
+4. Buka browser dan akses ke `http://localhost:5175/`.
 
 ## 📜 Lisensi
 
